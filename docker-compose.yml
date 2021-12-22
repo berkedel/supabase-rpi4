@@ -37,7 +37,7 @@ services:
 
   auth:
     container_name: supabase-auth
-    image: berkedel/gotrue:v2.2.12
+    image: berkedel/gotrue:v2.2.13
     depends_on:
       - db
     restart: unless-stopped
@@ -87,7 +87,7 @@ services:
 
   realtime:
     container_name: supabase-realtime
-    image: berkedel/realtime:v0.19.3
+    image: berkedel/realtime:v0.19.4
     depends_on:
       - db
     restart: unless-stopped
@@ -135,7 +135,7 @@ services:
 
   meta:
     container_name: supabase-meta
-    image: berkedel/postgres-meta:v0.29.0
+    image: berkedel/postgres-meta:v0.29.1
     depends_on:
       - db
     restart: unless-stopped
